@@ -89,9 +89,12 @@ const Home = () => {
 
   return (
     <div
-      className="max-w-xl mx-auto lg:mt-10 p-6 px-10 "
+      className="min-h-screen max-w-xl mx-auto lg:mt-10 p-6 px-10"
       style={{
         backgroundImage: "url('https://i.ibb.co.com/b5m3D6Mz/kaka.jpg')",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
       }}
     >
       <div className="flex justify-between items-center mb-4">
@@ -129,7 +132,7 @@ const Home = () => {
             className="bg-gray-100 p-3 rounded shadow text-sm flex items-start gap-3"
           >
             {/* If no photo, display the first letter of the user's name */}
-            <div className="w-10 h-10 bg-blue-500 text-white rounded-full flex justify-center items-center mt-2">
+            <div className=" bg-blue-500 text-white rounded-full flex justify-center items-center mt-2">
               {task.photo ? (
                 <img
                   src={task.photo}
